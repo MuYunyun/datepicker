@@ -1,2 +1,3 @@
 # datepicker
-a datepicker without relying on third-modules
+
+A datepicker with no dependencies.

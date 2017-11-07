@@ -1,0 +1,25 @@
+{
+  "name": "datepicker",
+  "version": "0.0.1",
+  "description": "date-picker 是一款不依赖第三方库的日期选择插件",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuYunyun/datepicker.git"
+  },
+  "author": "muyunyun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuYunyun/datepicker/issues"
+  },
+  "homepage": "https://github.com/MuYunyun/datepicker#readme",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  }
+}
