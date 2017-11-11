@@ -110,6 +110,10 @@
       }
     }, false)
 
+    $wrapper.addEventListener('click', (e) => {
+      e.stopPropagation()
+    }, false)
+
     // 点击输入框外面隐藏日历
     document.body.addEventListener('click', () => {
       if (isOpen) {
