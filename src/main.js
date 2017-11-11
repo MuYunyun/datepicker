@@ -89,7 +89,7 @@
     const $input = document.querySelector(input)
     let isOpen = false
 
-    $input.addEventListener('click', () => {
+    $input.addEventListener('click', (e) => {
       if (isOpen) {
         // 隐藏日历
         $wrapper.classList.remove('ui-datepicker-wrapper-show')
@@ -106,6 +106,15 @@
         $wrapper.style.top = top + height + 'px'
         $wrapper.style.left = left + 'px'
         isOpen = true
+        e.stopPropagation()
+      }
+    }, false)
+
+    // 点击输入框外面隐藏日历
+    document.body.addEventListener('click', () => {
+      if (isOpen) {
+        $wrapper.classList.remove('ui-datepicker-wrapper-show')
+        isOpen = false
       }
     }, false)
 
